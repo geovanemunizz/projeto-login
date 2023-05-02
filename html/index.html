@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/mdquery.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Tela de Login</title>
 </head>
 
@@ -14,19 +15,30 @@
     <main>
         <section id="login">
             <div id="imagem">
-               
+
 
             </div>
             <div id="form">
                 <h1>Login</h1>
 
-                <form action="login.js" method="post"></form>
-                <input type="email" name="username" id="username">
-                <input type="password" name="senha" id="senha" placeholder="sua senha">
+                <form action="login.js" method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-icons">person</span>
+                        <input type="email" name="usuario" id="usuario" placeholder="seu E-mail" autocomplete="email">
 
-                <input type="button" value="Entrar" id="entrar">
-                <input type="button" value="Esqueci a senha" id="lost-senha">
+                        <label for="usuario"></label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-icons">vpn_key</span>
 
+                        <input type="password" name="senha" id="senha" placeholder="sua senha"
+                            autocomplete="current-password">
+                        <label for="senha"></label>
+                    </div>
+                    <input type="submit" value="Entrar" class="submit">
+                    <a href="nao-sei.html" class="botao">Esqueci a senha <span class="material-icons"></span>
+                    </a>
+                </form>
             </div>
         </section>
     </main>

@@ -1,47 +1,103 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
 }
- 
+
 body {
-    background: #ee82ee;
-    height: 100vh;
-    width: 100vw;
+  background: #ee82ee;
+  height: 100vh;
+  width: 100vw;
 }
 
 main {
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-   
+  position: relative;
+  height: 100vh;
+  width: 100vw;
 }
 
 #login {
-    background: #ffffff;
-    width: 250px;
-    height: 500px;
-    border-radius: 15px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-    box-shadow: 0px 0px 10px #0000008e;
-    transition: width 0.5s, height 0.5s;
-    -o-transition-timing-function: ease;
+  background: #ffffff;
+  width: 250px;
+  height: 500px;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  box-shadow: 0px 0px 10px #0000008e;
+  transition: width 0.5s, height 0.5s;
+  -o-transition-timing-function: ease;
 }
 
 #imagem {
-    display: block;
-    background: url('/imagens/back-login.jpg') no-repeat;
-    height: 200px;
-    background-size: cover;
-    background-position: bottom center;
+  display: block;
+  background: url("/imagens/back-login.jpg") no-repeat;
+  height: 200px;
+  background-size: cover;
+  background-position: bottom center;
 }
-
 
 #form {
-    display: block;
-    padding: 10px;
+  display: block;
+  padding: 10px;
+  
 }
+
+#form h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+form label {
+  display: none;
+}
+
+.campo {
+  background: #68a301;
+  width: 100%;
+  display: block;
+  height: 40px;
+  border-radius: 5px;
+  margin: 5px 0px
+}
+
+.submit, .botao{
+  display: block;
+  font-size: 1em;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  margin-top: 7px;
+  background: #68a301;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+}
+
+.botao {
+  background-color: white;
+  color: #68a301;
+  border: 1px solid #68a301;
+  text-decoration: none;
+}
+
+.submit:hover, .botao:hover {
+  background: #3c7401;
+  cursor: pointer;
+}
+
+.botao:hover {
+  color: #ffffff;
+}
+
+.botao {
+  display: block;
+  margin-top: 5px;
+  padding: 6px;
+  text-align: center;
+}
+
+
