@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mdquery.css">
+    <title>Pratica de Tela de Login</title>
+</head>
+<body>
+
+    <main>
+        <section id="login">
+            <div id="imagem">
+
+            </div>
+
+            <div id="form">
+                <h1>Login</h1>
+                <form action="loading.js" method="post">
+
+                    <div class="campo">
+                        <span class="material-icons">person</span>
+                        <input type="email" name=usuario id="usuario" placeholder="seu e-mail" autocomplete="email">
+                        <label for="usuario"></label>
+                    </div>
+
+                    <div class="campo">
+                        <span class="material-icons">vpn_key</span>
+                        <input type="password" name="senha" id="senha" placeholder="sua senha" autocomplete="current-password">
+                        <label for="senha"></label>
+                    </div>
+
+                    <input type="submit" value="Entrar" class="entrar">
+                    <a href="nao-sei.html" class="botao">Esqueci a senha <span class="material-icons"></span>
+                    </a>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

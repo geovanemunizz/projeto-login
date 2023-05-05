@@ -1,0 +1,37 @@
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    body {
+        background: linear-gradient(45deg,  #e84343, #2e2ea7);
+    }
+    #login {
+        width: 90vw;
+    }
+
+    #imagem {
+        width: 35%;
+        height: 100%;
+        float: left;
+    }
+
+    #form {
+        width: 65%;
+        float: right;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #login {
+        width: 910px;
+    }
+
+    #imagem {
+        float: right;
+        height: 100%;
+        width: 50%;
+    }
+
+    #form {
+        width: 50%;
+        float: left;
+    }
+}
